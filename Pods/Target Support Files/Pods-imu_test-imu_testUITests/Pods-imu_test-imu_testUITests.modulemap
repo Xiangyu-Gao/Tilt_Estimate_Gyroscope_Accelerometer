@@ -1,0 +1,6 @@
+framework module Pods_imu_test_imu_testUITests {
+  umbrella header "Pods-imu_test-imu_testUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
