@@ -1,9 +1,9 @@
 # Estimate Tilt Angle of Phone using Gyroscope and Accelerometer
 
-This is an inofficial implementation of paper ['SoundWave: Using the Doppler Effect to Sense Gestures'](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/GuptaSoundWaveCHI2012.pdf) running on laptop or PC. The code is adapted from github repository from [Joao Nuno Carvalho](https://github.com/joaocarvalhoopen/computer_Doppler_RADAR)
+This is an implementation of estimating and trackiing the tilt angle of a moving or static IOS phone with the data from gyroscope and accelerometer (IMU on phone). The code is adapted from github repository from [justin chan](https://github.com/justinklchan/imu_iphone)
 
 ## What is it
-This project leverages the speaker and microphone already embedded in most commodity devices to sense in-air gestures around the device. To do this, we generate an inaudible tone, which gets frequency-shifted when it reflects off moving objects like the hand. We measure this shift with the microphone to infer various gestures.
+This project leverages the gyroscope and accelerometer already embedded in most commodity phone devices to estimate the tilt angle of phone when it is moving. To do this, we generate an inaudible tone, which gets frequency-shifted when it reflects off moving objects like the hand. We measure this shift with the microphone to infer various gestures.
 
 ## How to use
 
