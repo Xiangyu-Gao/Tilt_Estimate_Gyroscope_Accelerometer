@@ -27,7 +27,7 @@ To test this program, use Xcode, connect your phone to laptop -> choose your pho
 Note that all the code changes are in the file './imu_test/ViewController.swift'
 
 ## Result
-We test put phone on table and make it static. The tilt estimation results for a long time are shown in below figure, where the red color represents the estimation for accelerometer, the blue color represents the gyroscope, and the blue color represents the complementary results with parameter 0.98, 0.02
+We test put phone on table and make it static. The tilt estimation results for a long time are shown in below figure, where the red color represents the estimation results for accelerometer, the blue color represents the results for gyroscope, and the blue color represents the results for complementary filter with parameter 0.98, 0.02
 
 <img width="657" alt="Screen Shot 2022-06-01 at 2 57 08 PM" src="https://user-images.githubusercontent.com/46943965/171508722-5dee7e61-0fc9-4182-a3e7-cfa05efd44e2.png">
 
