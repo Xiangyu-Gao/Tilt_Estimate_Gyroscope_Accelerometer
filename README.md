@@ -3,7 +3,7 @@
 This is an implementation of estimating and trackiing the tilt angle of a moving or static IOS phone with the data from gyroscope and accelerometer (IMU on phone). The code is adapted from github repository from [Justin Chan](https://github.com/justinklchan/imu_iphone)
 
 ## What is it
-This project leverages the gyroscope and accelerometer already embedded in most commodity phone devices to estimate the tilt angle of phone when it is moving. The tilt angle is defined as the angle ρ between the gravitational vector measured by the accelerometer and the initial orientation with the gravitational field pointing downwards along the z-axis. 
+This project leverages the gyroscope and accelerometer already embedded in most commodity phone devices to estimate the tilt angle of phone when it is moving. The tilt angle is defined as the angle ρ between the gravitational vector measured by the accelerometer and the initial orientation with the gravitational field pointing downwards along the $z$-axis. 
 
 <img width="497" alt="Screen Shot 2022-06-01 at 1 59 57 PM" src="https://user-images.githubusercontent.com/46943965/171500709-5eb50fd9-6cc2-4431-891c-5483a58a3ff5.png">
 
@@ -16,7 +16,7 @@ If the accelerometer reading is $G_p$, then in the absence of linear acceleratio
 
 ### 2) Gyroscope-based tilt estimation:
 
-First calculate the accumulated rotation angle on x and y axes, and then calculate the [quaternion multiplication](http://msl.cs.illinois.edu/~lavalle/papers/LavYerKatAnt14.pdf) of $x$, $y$ rotations angles, finally get the real part of quaternion multiplication resulst and convert it to the tilt.
+First calculate the accumulated rotation angle on $x$ and $y$ axes, and then calculate the [quaternion multiplication](http://msl.cs.illinois.edu/~lavalle/papers/LavYerKatAnt14.pdf) of $x$, $y$ rotations angles, finally get the real part of quaternion multiplication resulst and convert it to the tilt.
 
 ### 3) Combination of accelerometer and gyroscope by applying complementary filter
 angle $= 0.98 * ($ angle $+$ change of gyroscope_tilt $) + 0.02 * ($ accelerometer_tilt $)$
