@@ -16,7 +16,7 @@ If the accelerometer reading is $G_p$, then in the absence of linear acceleratio
 
 ### 2) Gyroscope-based tilt estimation:
 
-calculate the accumulated rotation angle on x and y axes, and calculate the quaternion multiplication of x, y rotations angles for getting the final tilt estimation.
+First calculate the accumulated rotation angle on x and y axes, and then calculate the quaternion multiplication of x, y rotations angles, finally get the real part of quaternion multiplication resulst and convert it to the tilt.
 
 ### 3) Combination of accelerometer and gyroscope by applying complementary filter
 angle $= 0.98 * ($ angle $+$ change of gyroscope_tilt $) + 0.02 * ($ accelerometer_tilt $)$
