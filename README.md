@@ -19,7 +19,7 @@ If the accelerometer reading is $G_p$, then in the absence of linear acceleratio
 calculate the accumulated rotation angle on x and y axes, and calculate the quaternion multiplication of x, y rotations angles for getting the final tilt estimation.
 
 ### 3) Combination of accelerometer and gyroscope by applying complementary filter
-$ angle = 0.98 * (angle + change \, of~gyroscope~tilt) + 0.02 * (accelerometer~tilt)$
+$ angle = 0.98 * (angle + change \ of~gyroscope~tilt) + 0.02 * (accelerometer~tilt)$
 ## How to use
 
 To test this program, you should firstly disable in the microphone settings, the echo cancelation and the noise reduction. Control Panel -> Sound -> Recording -> Microphone Array -> Propertoes -> Advanced -> Disable Audio Enhancements
