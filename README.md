@@ -19,7 +19,7 @@ If the accelerometer reading is $G_p$, then in the absence of linear acceleratio
 calculate the accumulated rotation angle on x and y axes, and calculate the quaternion multiplication of x, y rotations angles for getting the final tilt estimation.
 
 ### 3) Combination of accelerometer and gyroscope by applying complementary filter
-
+Angle $=0.98($ Angle $+$ change of gyroscope-tilt $)+0.02($ accelerometer-tilt $)$
 ## How to use
 
 To test this program, you should firstly disable in the microphone settings, the echo cancelation and the noise reduction. Control Panel -> Sound -> Recording -> Microphone Array -> Propertoes -> Advanced -> Disable Audio Enhancements
@@ -30,7 +30,7 @@ python main.py
 ```
 
 ## Result
-The tilt estimation results for a long time are shown in below figure, where the red color represents the estimation for accelerometer, the blue color represents the gyroscope, and the blue color represents the complementary results with parameter 0.98, 0.02
+We test put phone on table and make it static. The tilt estimation results for a long time are shown in below figure, where the red color represents the estimation for accelerometer, the blue color represents the gyroscope, and the blue color represents the complementary results with parameter 0.98, 0.02
 
 <img width="657" alt="Screen Shot 2022-06-01 at 2 57 08 PM" src="https://user-images.githubusercontent.com/46943965/171508722-5dee7e61-0fc9-4182-a3e7-cfa05efd44e2.png">
 
