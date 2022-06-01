@@ -10,8 +10,11 @@ To do this, three ways of usiing differeng sensors were implemented here.
 
 ### 1) Accelerometer-based tilt estimation:
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+$\boldsymbol{G}_{p} \cdot\left(\begin{array}{c}0 \\ 0 \\ 1\end{array}\right)=G_{p z}=\left|\boldsymbol{G}_{p}\right| \cos \rho \Rightarrow \cos \rho=\frac{G_{p z}}{\sqrt{G_{p x}^{2}+G_{p y}^{2}+G_{p z}^{2}}}$
+
+### 2) gyroscope-based tilt estimation:
+
+### 3) Combination of accelerometer and gyroscope by applying complementary filter
 
 ## How to use
 
