@@ -10,7 +10,8 @@ To do this, three ways of usiing differeng sensors were implemented here.
 
 ### 1) Accelerometer-based tilt estimation:
 
-$\boldsymbol{G}_{p} \cdot\left(\begin{array}{c}0 \\ 0 \\ 1\end{array}\right)=G_{p z}=\left|\boldsymbol{G}_{p}\right| \cos \rho \Rightarrow \cos \rho=\frac{G_{p z}}{\sqrt{G_{p x}^{2}+G_{p y}^{2}+G_{p z}^{2}}}$
+If the accelerometer reading is $G_p$, then in the absence of linear acceleration:
+$G_{p} \cdot\left(\begin{array}{c}0 \\ 0 \\ 1\end{array}\right)=G_{p z}=\left|\boldsymbol{G}_{p}\right| \cos \rho \Rightarrow \cos \rho=\frac{G_{p z}}{\sqrt{G_{p x}^{2}+G_{p y}^{2}+G_{p z}^{2}}}$
 
 ### 2) gyroscope-based tilt estimation:
 
