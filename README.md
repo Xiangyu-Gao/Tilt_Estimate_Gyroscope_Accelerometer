@@ -4,6 +4,7 @@ This is an implementation of estimating and trackiing the tilt angle of a moving
 
 ## What is it
 This project leverages the gyroscope and accelerometer already embedded in most commodity phone devices to estimate the tilt angle of phone when it is moving. The tilt angle is defined as the angle ρ between the gravitational vector measured by the accelerometer and the initial orientation with the gravitational field pointing downwards along the z-axis. 
+
 <img width="497" alt="Screen Shot 2022-06-01 at 1 59 57 PM" src="https://user-images.githubusercontent.com/46943965/171500709-5eb50fd9-6cc2-4431-891c-5483a58a3ff5.png">
 
 To do this, three ways of usiing differeng sensors were implemented here.
