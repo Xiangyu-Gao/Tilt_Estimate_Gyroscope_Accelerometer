@@ -14,7 +14,9 @@ To do this, three ways of usiing differeng sensors were implemented here.
 If the accelerometer reading is $G_p$, then in the absence of linear acceleration, then the tilt angle $\rou$ is:
 <img width="461" alt="Screen Shot 2022-04-27 at 4 30 14 PM" src="https://user-images.githubusercontent.com/46943965/171502893-0bfb2a96-433c-45eb-80fb-85fa50cf7488.png">
 
-### 2) gyroscope-based tilt estimation:
+### 2) Gyroscope-based tilt estimation:
+
+calculate the accumulated rotation angle on x and y axes, and calculate the quaternion multiplication of x, y rotations angles for getting the final tilt estimation.
 
 ### 3) Combination of accelerometer and gyroscope by applying complementary filter
 
@@ -26,6 +28,11 @@ Then run
 ```
 python main.py
 ```
+
+## Result
+The tilt estimation results for a long time are shown in below figure, where the red color represents the estimation for accelerometer, the blue color represents the gyroscope, and the blue color represents the complementary results with parameter 0.98, 0.02
+
+<img width="657" alt="Screen Shot 2022-06-01 at 2 57 08 PM" src="https://user-images.githubusercontent.com/46943965/171508722-5dee7e61-0fc9-4182-a3e7-cfa05efd44e2.png">
 
 ## Demo
 Demo of running code on iphone in real time:
