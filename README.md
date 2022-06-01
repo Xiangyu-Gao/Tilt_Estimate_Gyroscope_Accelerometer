@@ -22,12 +22,9 @@ First calculate the accumulated rotation angle on x and y axes, and then calcula
 angle $= 0.98 * ($ angle $+$ change of gyroscope_tilt $) + 0.02 * ($ accelerometer_tilt $)$
 ## How to use
 
-To test this program, you should firstly disable in the microphone settings, the echo cancelation and the noise reduction. Control Panel -> Sound -> Recording -> Microphone Array -> Propertoes -> Advanced -> Disable Audio Enhancements
+To test this program, use Xcode, connect your phone to laptop -> choose your phone as device at the top -> select your project in the left 'buildtime' window -> slect project in 'target' -> 'singning and capabilities', sign in your account and change the bundle identifier (add one number at the end is fine) -> build and run the project.
 
-Then run
-```
-python main.py
-```
+Note that all the code changes are in the file './imu_test/ViewController.swift'
 
 ## Result
 We test put phone on table and make it static. The tilt estimation results for a long time are shown in below figure, where the red color represents the estimation for accelerometer, the blue color represents the gyroscope, and the blue color represents the complementary results with parameter 0.98, 0.02
