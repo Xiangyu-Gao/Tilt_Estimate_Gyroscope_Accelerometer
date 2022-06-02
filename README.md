@@ -22,7 +22,7 @@ First calculate the accumulated rotation angle on $x$ and $y$ axes, and then cal
 angle $= 0.98 * ($ angle $+$ change of gyroscope_tilt $) + 0.02 * ($ accelerometer_tilt $)$
 ## How to use
 
-To test this program, use Xcode, connect your phone to laptop -> choose your phone as device at the top -> select your project in the left 'buildtime' window -> slect project in 'target' -> 'singning and capabilities', sign in your account and change the bundle identifier (add one number at the end is fine) -> build and run the project.
+To test this program, use Xcode, connect your phone to laptop -> choose your phone as device at the top -> select your project in the left 'buildtime' window -> select project in 'target' -> 'singning and capabilities', sign in your account and change the bundle identifier (add one number at the end is fine) -> build and run the project.
 
 Note that all the code changes are in the file './imu_test/ViewController.swift'
 
