@@ -12,6 +12,7 @@ To do this, three ways of usiing differeng sensors were implemented here.
 ### 1) Accelerometer-based tilt estimation:
 
 If the accelerometer reading is $G_p$, then in the absence of linear acceleration, then the tilt angle ρ is calculated based on below [formula](https://www.nxp.com/files-static/sensors/doc/app_note/AN3461.pdf):
+
 <img width="461" alt="Screen Shot 2022-04-27 at 4 30 14 PM" src="https://user-images.githubusercontent.com/46943965/171502893-0bfb2a96-433c-45eb-80fb-85fa50cf7488.png">
 
 ### 2) Gyroscope-based tilt estimation:
